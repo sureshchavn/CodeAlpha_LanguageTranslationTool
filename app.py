@@ -1,7 +1,7 @@
 
 from flask import Flask, render_template, request, jsonify # type: ignore
 from langdetect import detect, LangDetectException # pyright: ignore[reportMissingImports]
-import requests
+import requests # pyright: ignore[reportMissingModuleSource]
 import re
 
 app = Flask(__name__)
